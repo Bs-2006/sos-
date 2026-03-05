@@ -1,0 +1,125 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+metro-cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# System files
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Local env files
+.env
+.env*.local
+.env.development
+.env.production
+.env.test
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# Cache
+.cache/
+
+# Windows system files
+AppData/
+*.tmp
+
+# Build
+build/
+android/app/build/
+android/.gradle/
+ios/Pods/
+ios/build/
+*.ipa
+*.apk
+*.aab
+
+# ML Models (large files)
+*.h5
+*.pth
+*.pkl
+*.onnx
+*.pb
+
+# Uploads
+uploads/
+temp/
+
+# Database
+*.db
+*.sqlite
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# React Native
+*.hprof
+.gradle/
+local.properties
+
+# Misc
+*.orig
+*.rej
+*.bak
+*.swp
+*~.nib
+*.log.*

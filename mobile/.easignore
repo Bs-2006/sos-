@@ -1,0 +1,38 @@
+# System files
+AppData/
+*.tmp
+*.log
+
+# Chrome cache
+**/Chrome/**
+**/Cache/**
+**/IndexedDB/**
+
+# WhatsApp cache
+**/WhatsApp/**
+
+# Temp files
+**/Temp/**
+
+# NPM cache
+**/.npm/**
+**/npm-cache/**
+
+# Kiro cache
+**/Kiro/**
+
+# Node modules (already in .gitignore but adding here too)
+node_modules/
+
+# Build outputs
+.expo/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

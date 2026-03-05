@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "LifeLink",
+    "slug": "lifelink-app-dev",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#1963eb",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lifelink.app",
+      "icon": "./assets/icon.png",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show ambulance tracking and emergency services nearby.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location for emergency services and ambulance tracking.",
+        "NSContactsUsageDescription": "This app needs access to your contacts to add emergency contacts.",
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone to record emergency voice descriptions."
+      }
+    },
+    "android": {
+      "package": "com.lifelink.app",
+      "versionCode": 4,
+      "backgroundColor": "#1963eb",
+      "icon": "./assets/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1963eb"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "READ_CONTACTS",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow LifeLink to access your location for emergency services and ambulance tracking."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow LifeLink to access your contacts to add emergency contacts."
+        }
+      ],
+      "expo-audio",
+      "expo-asset"
+    ],
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": false,
+      "fallbackToCacheTimeout": 0,
+      "url": ""
+    },
+    "runtimeVersion": "1.0.0"
+  }
+}

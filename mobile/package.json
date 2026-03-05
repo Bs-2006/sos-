@@ -1,0 +1,53 @@
+{
+  "name": "lifelink-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "build:apk": "eas build -p android --profile preview",
+    "build:production": "eas build -p android --profile production",
+    "build:local": "eas build -p android --profile preview --local",
+    "version:patch": "node update-version.js patch",
+    "version:minor": "node update-version.js minor",
+    "version:major": "node update-version.js major",
+    "prebuild": "npx expo prebuild --platform android",
+    "build:release": "cd android && ./gradlew assembleRelease",
+    "build:clean": "cd android && ./gradlew clean && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.3",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
+    "expo": "~54.0.0",
+    "expo-asset": "~12.0.12",
+    "expo-audio": "~1.1.1",
+    "expo-av": "^16.0.8",
+    "expo-camera": "~17.0.10",
+    "expo-contacts": "~15.0.11",
+    "expo-font": "~14.0.11",
+    "expo-image-picker": "~17.0.10",
+    "expo-location": "~19.0.8",
+    "expo-sensors": "~15.0.0",
+    "expo-status-bar": "~3.0.9",
+    "isexe": "^4.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-maps": "1.20.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "overrides": {
+    "expo-asset": "~12.0.12"
+  },
+  "private": true
+}
